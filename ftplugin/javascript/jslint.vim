@@ -79,7 +79,7 @@ if has('win32')
 endif
 let s:cmd = "cd " . s:plugin_path . " && " . s:cmd . " " . s:plugin_path . "runjslint." . s:runjslint_ext
 
-let s:jslintrc_file = expand('~/.jslintrc')
+let s:jslintrc_file = expand('~/.dotfiles/.jslintrc')
 if filereadable(s:jslintrc_file)
   let s:jslintrc = readfile(s:jslintrc_file)
 else
